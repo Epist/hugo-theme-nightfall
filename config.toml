@@ -1,3 +1,54 @@
 [module]
   [module.hugoVersion]
     min = "0.114.0"
+
+baseURL = 'http://gohugo.io/'
+languageCode = 'en-us'
+theme = "hugo-theme-nightfall"
+
+[menu]
+  [[menu.header]]
+    name = "blog"
+    weight = 0
+    url = "blog"
+  [[menu.header]]
+    name = "about"
+    weight = 1
+    url = "about"
+
+[params]
+user = "hello"
+hostname = "gohugo.io"
+  [params.author]
+    name = "Larry Muhlstein"  # Website and RSS feed author
+    email = "larrymuhlstein@gmail.com"  # RSS feed email address
+
+sitedescription = 'Larry Muhlstein Homepage'
+
+readingTime = true  # Show reading time on post page
+published = true  # Show published data on post page
+
+[[params.social]]
+key = 0
+name = "github"
+url = "https://github.com/epist"
+target = "_blank"
+aria = "GitHub Profile"
+
+[[params.social]]
+key = 1
+name = "instagram"
+url = "https://www.instagram.com/perspectivereflective/"
+aria = "Instagram Profile"
+
+[[params.social]]
+key = 2
+name = "linkedin"
+url = "https://www.linkedin.com/in/larry-muhlstein/"
+aria = "LinkedIn Profile"
+
+[[params.social]]
+key = 3
+name = "email"
+url = "larrymuhlstein@gmail.com"
+aria = "My e-Mail Address"
